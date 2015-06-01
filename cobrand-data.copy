@@ -1,0 +1,16 @@
+
+           01 ls-result pic s9v9(10).
+
+           01 ls-did-init pic X.
+     
+           01 ls-current-date-data.
+             05 ls-current-date.
+              10 ls-current-year pic 9(04).
+              10 ls-current-month pic 9(04).
+              10 ls-current-day pic 9(02).
+             05 ls-current-time.
+              10 ls-current-hours  pic 9(02).
+              10 ls-current-minute pic 9(02).
+              10 ls-current-second pic 9(02).
+              10 ls-current-milli  pic 9(10).
+             05 ls-diff-from-gmt pic 9(04).
