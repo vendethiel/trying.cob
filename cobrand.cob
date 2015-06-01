@@ -6,8 +6,8 @@
            copy "cobrand-data.copy".
 
        procedure division using ls-result.
-           if ls-did-init not equal "Y" then
-             set ls-did-init to "Y"
+           if ls-did-not-init then
+             set ls-did-init to true
              move function current-date to ls-current-date-data
            end-if
            compute ls-result = function random ()

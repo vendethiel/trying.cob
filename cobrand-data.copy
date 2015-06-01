@@ -1,7 +1,9 @@
 
            01 ls-result pic s9v9(10).
 
-           01 ls-did-init pic X.
+           01 ls-init-status pic X.
+             88 ls-did-init value "Y".
+             88 ls-did-not-init value "N".
      
            01 ls-current-date-data.
              05 ls-current-date.
