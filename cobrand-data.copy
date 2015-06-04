@@ -1,18 +1,16 @@
+           01 randed pic s9v9(10).
 
-           01 ls-result pic s9v9(10).
-
-           01 ls-init-status pic X.
-             88 ls-did-init value "Y".
-             88 ls-did-not-init value "N".
+           01 init-status pic X value "N".
+             88 did-init value "Y".
      
-           01 ls-current-date-data.
-             05 ls-current-date.
-              10 ls-current-year pic 9(04).
-              10 ls-current-month pic 9(04).
-              10 ls-current-day pic 9(02).
-             05 ls-current-time.
-              10 ls-current-hours  pic 9(02).
-              10 ls-current-minute pic 9(02).
-              10 ls-current-second pic 9(02).
-              10 ls-current-milli  pic 9(10).
-             05 ls-diff-from-gmt pic 9(04).
+           01 cur-date.
+             05 current-day.
+              10 current-year pic 9(04).
+              10 current-month pic 9(04).
+              10 current-day pic 9(02).
+             05 current-time.
+              10 current-hours  pic 9(02).
+              10 current-minute pic 9(02).
+              10 current-second pic 9(02).
+              10 current-milli  pic 9(10).
+             05 diff-from-gmt pic 9(04).
