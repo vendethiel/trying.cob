@@ -2,19 +2,19 @@
        program-id. dico.
 
        environment division.
-         input-output section.
+       input-output section.
            file-control.
            select word assign to 'dico.txt'
-           organization is line sequential.
+             organization is line sequential.
 
        data division.
-         file section.
-           fd word.
-           01 word-file pic A(25).
+       file section.
+       fd word.
+       01 word-file pic A(25).
 
-         working-storage section.
-           01 ws-word pic A(25).
-           01 ws-eof pic A(1).
+       working-storage section.
+       01 ws-word pic A(25).
+       01 ws-eof pic A(1).
 
        procedure division.
            open input student.

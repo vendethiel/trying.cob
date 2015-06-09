@@ -2,9 +2,9 @@
        program-id. read-until-we-die.
 
        data division.
-         working-storage section.
-           01 user-input pic 9(10).
-           01 total pic 9(10).
+       working-storage section.
+       01 user-input pic 9(10).
+       01 total pic 9(10).
 
        procedure division.
            perform forever

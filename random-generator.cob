@@ -2,7 +2,7 @@
        program-id. depending-on.
 
        data division.
-         working-storage section.
+       working-storage section.
            copy "cobrand-data.copy".
 
        procedure division.
