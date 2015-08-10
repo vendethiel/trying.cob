@@ -17,12 +17,12 @@
        01 ws-eof pic A(1).
 
        procedure division.
-           open input student.
+           open input word.
            perform until ws-eof='Y'
-             read student into ws-student
+             read word into ws-word
                at end move 'Y' to ws-eof
-               not at end display ws-student
+               not at end display ws-word
              end-read
            end-perform.
-           close student.
+           close word.
            stop run.
