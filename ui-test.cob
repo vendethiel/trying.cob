@@ -4,16 +4,15 @@
 
        data division.
        working-storage section.
-       77 ws-name pic A(10) value "YO YO YO".
+       01 ws-name pic A(10) value "YO YO YO".
 
        screen section.
-       01 main-screen blank screen.
-         02 line 1 col 5 pic A(10) from ws-name.
-         02 line 2.
-           03 col 1 value "hey".
-           03 col 32 value "???".
+       01 main-screen.
+         02 line 2 col 5 value "feow XD XD XD".
+         02 line 3 col 20 using ws-name.
+         02 line 4 col 15 value "heyo".
 
        procedure division.
-           display main-screen
-           end-display.
-           call "C$SLEEP" using 5 end-call.
+           move "wasbilah" to ws-name.
+           display main-screen.
+           goback.         
