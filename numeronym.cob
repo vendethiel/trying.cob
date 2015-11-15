@@ -50,7 +50,7 @@
            if ws-count <= 1 then
              move ws-word to ws-res-word
            else
-      * remove 2, the starting letters
+      * remove 2, leading + trailing
              string ws-word(1:1)
                     ws-count-str
                     ws-word(ws-bare-count:ws-bare-count)
