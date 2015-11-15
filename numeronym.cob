@@ -30,7 +30,7 @@
        program-id. calculate-numeronym.
 
        data division.
-       working-storage section.
+       local-storage section.
       * implem details:
        01 ws-count-glob.
            05 ws-count-spc pic 99.
@@ -43,7 +43,6 @@
        01 ws-res-word pic A(4).
 
        procedure division using ws-word, ws-res-word.
-           initialize ws-count-spc.
            inspect ws-word tallying ws-count-spc for trailing space.
            compute ws-bare-count =
              function length(ws-word) - ws-count-spc
