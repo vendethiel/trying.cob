@@ -1,7 +1,6 @@
        identification division.
        program-id. test-ui.
 
-
        data division.
        working-storage section.
        01 ws-name pic A(10) value "YO YO YO".
@@ -15,4 +14,5 @@
        procedure division.
            move "hey you" to ws-name.
            display main-screen.
-           goback.         
+           goback
+           .
