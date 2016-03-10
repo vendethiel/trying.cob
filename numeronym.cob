@@ -55,5 +55,6 @@
                     ws-count-str
                     ws-word(ws-bare-count:ws-bare-count)
                     into ws-res-word
-           end-if.
+           end-if
+           .
        goback.
