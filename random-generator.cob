@@ -1,5 +1,5 @@
        identification division.
-       program-id. depending-on.
+       program-id. random-generator.
 
        data division.
        working-storage section.
